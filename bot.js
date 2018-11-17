@@ -1906,20 +1906,20 @@ if(message.content == prefix+"عواصم"){
                                 }
                                 
 								
-								const adminprefix = "-v";
-const devs = ['349616310734553088','335027415619338240'];
+const adminprefix = "$b";
+const devs = ['408396389291393025'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
      
   if (message.content.startsWith(adminprefix + 'setname')) {
 client.user.setUsername(argresult).then
-    message.channel.sendMessage(`**${argresult}** : ØªÙ… ØªØºÙŠÙŠØ± Ø£Ø³Ù… Ø§Ù„Ø¨ÙˆØª Ø¥Ù„Ù‰`)
-return message.reply("**Ù„Ø§ ÙŠÙ…ÙƒÙ†Ùƒ ØªØºÙŠÙŠØ± Ø§Ù„Ø§Ø³Ù… ÙŠØ¬Ø¨ Ø¹Ù„ÙŠÙƒ Ø§Ù„Ø§Ù†ØªØ¸Ø¢Ø± Ù„Ù…Ø¯Ø© Ø³Ø§Ø¹ØªÙŠÙ† . **");
+    message.channel.sendMessage(`**${argresult}** : ✅**تم تغير بنجاح**`)
+return message.reply("**لا يمكنك تغير اسم لمدة ساعة . **");
 } else
   if (message.content.startsWith(adminprefix + 'setavatar')) {
 client.user.setAvatar(argresult);
-  message.channel.sendMessage(`**${argresult}** : ØªÙ… ØªØºÙŠØ± ØµÙˆØ±Ø© Ø§Ù„Ø¨ÙˆØª`);
+  message.channel.sendMessage(`**${argresult}** : ✅**تم تغير بنجاح**`);
       } 
 });
 
